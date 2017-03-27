@@ -6,7 +6,9 @@ Android Hardware Documentation
 ## Downloading the Docker
  
 Pull the image from dockerhub
+```
 sudo docker pull moquality/atest:0.32
+```
 
 ## Setup the Docker
 
