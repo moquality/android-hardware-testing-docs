@@ -6,7 +6,7 @@ Android Hardware Documentation
 ## Downloading the Docker
  
 Pull the image from dockerhub
-sudo docker pull moquality/atest:0.322
+sudo docker pull moquality/atest:0.323
 
 ## Setup the Docker
 
@@ -15,7 +15,7 @@ Ensure that you have killed adb server on the host machine. Use adb kill-server.
 
 Run the run.sh bash script inside the docker with:
 ```
-docker run -i -t --privileged -v /dev/bus/usb:/dev/bus/usb -v /home/archermind/.android:/root/.android moquality/atest:0.322
+docker run -i -t --privileged -v /dev/bus/usb:/dev/bus/usb -v /home/archermind/.android:/root/.android moquality/atest:0.323
 python /app/run.py
 ```
 
@@ -24,6 +24,7 @@ python /app/run.py
 All tests can be configured through the config.yml file (See Appendix A). An example config file is:
 ```
 moq:
+  api_server: "<api-server>"
   api_key: "<api-key>"
 
 device_1: <device-id>
@@ -63,7 +64,7 @@ A current version of testlink is hosted at http://tl.moquality.com (username: ar
 ## config.yml configuration
 
 - config.yml resides in the main directory project android_tests
-- Obtain the api_key from MoQuality.
+- Obtain the api_server and api_key from MoQuality.
 - First field is device_1. This field represent the device id and is unique to every phone. A user must enter the valid device id. The device id is obtained using the command  “adb devices” inside the docker machine.
 - Next few fields are “testlink_url”,  “testlink_key”, “testlink_tester” (default is bot 1). These details are filled beforehand and need not to be changed.
 - Next field is “project_name”. Default name is “Video Playback Testing”. It can be changed, but a project with the same name must be created in the Testlink.
