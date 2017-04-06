@@ -1,3 +1,5 @@
+This page will show you how to setup the phone and run the docker image.
+
 ## Phone Setup
 
 Ensure that the following settings are set on the phone:
@@ -11,20 +13,25 @@ Ensure that the following settings are set on the phone:
 Pull the image from dockerhub
 sudo docker pull moquality/atest:0.33
 
-## Setup the Docker
+## Running the Docker
 
-### Running tests
+Ensure that the host machine is authorized to use adb. If ```adb devices``` returns a device, it is authorized
 
-Ensure that the host machine is authorized to use adb. If ```adb devices``` returns a device, it is authorized.
 Run the run.sh bash script inside the docker with:
 ```
 docker run -i -t --privileged -v /dev/bus/usb:/dev/bus/usb -v /home/archermind/.android:/root/.android moquality/atest:0.33
+```
+
+Inside the docker,
+
+```
+cd /app
 python /app/run.py
 ```
 
 ### Configuration
 
-All tests can be configured through the config.yml file (See Appendix A). An example config file is:
+All tests can be configured through the config.yml file. An example config file is:
 ```
 device_1: <device-id>
 
