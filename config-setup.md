@@ -8,7 +8,7 @@ The configuration file is used to setup internal parameters as needed. config.ym
 - moq: MoQuality related parameters.
 - testlink: Testlink related parameters.
 
-**moq Parameters
+moq Parameters
 
 - api_server: Server to authenticate against
 - api_key: Provided by MoQuality
