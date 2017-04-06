@@ -1,16 +1,6 @@
-Android Hardware Documentation
-==============================
-
-# [Docker Setup](/docker-setup.md)
-# [Configuration Setup](/config-setup.md)
-
-
-
-
-
 # Working with Testlink
 
-A current version of testlink is hosted at http://tl.moquality.com (username: archertest, password: testlink). Test cases are pre-loaded and can be viewed in Test Specification tab. 
+A current version of testlink is hosted at http://139.196.121.67/testlink/login.php (username: admin, password: archertest). Test cases are pre-loaded and can be viewed in Test Specification tab. 
 
 ![Testlink Build/Release Page](testlink.png)
 
