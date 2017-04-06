@@ -1,7 +1,7 @@
 # Additional Documentation
 
 ### Writing your own test cases
-Test cases are specified using a YAML file. An example YAML configuration that comes with the docker image is in archermind.test.yml.
+Test cases are specified using a YAML file. An example YAML configuration that comes with the docker image is in ```archermind.test.yml```.
 
 ```
 device: Android
@@ -30,3 +30,5 @@ The following test comprises of steps specified by the ```steps``` parameter.
 The test's main part is the screencheck module. Our test module knows how a video should play. It takes a screencapture of the phone and tests for similarity with the original known image which was used to generate the video.
 
 In the future, we will support arbitrary generation of video that can be used with the screencheck function.
+
+Also see ```archermind.video.yml``` for another test. This test is analogous to ArcherMind's video test suite.
