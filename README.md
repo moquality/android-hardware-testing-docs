@@ -3,46 +3,7 @@ Android Hardware Documentation
 
 # Docker Setup
 
-## Downloading the Docker
- 
-Pull the image from dockerhub
-sudo docker pull moquality/atest:0.323
 
-## Setup the Docker
-
-### Running tests
-Ensure that you have killed adb server on the host machine. Use adb kill-server.
-
-Run the run.sh bash script inside the docker with:
-```
-docker run -i -t --privileged -v /dev/bus/usb:/dev/bus/usb -v /home/archermind/.android:/root/.android moquality/atest:0.323
-python /app/run.py
-```
-
-### Configuration
-
-All tests can be configured through the config.yml file (See Appendix A). An example config file is:
-```
-moq:
-  api_server: "<api-server>"
-  api_key: "<api-key>"
-
-device_1: <device-id>
-testlink_url: "http://tl.moquality.com"
-testlink_key: "<testlink-key>"
-testlink_tester: "bot1"
-project_name: "Video Playback Testing"
-testplan_name: "Videoplan"
-build_name: "NexusM"
-
-```
-It should be saved in the /app folder.
-
-If you want to edit the config.yml, edit it on the host machine and put it on the docker using:
-```
-docker cp config.yml <container-id> /app/config.yml
-```
-You can find the current docker’s container-id with docker ps.
 
 # Working with Testlink
 
@@ -50,9 +11,9 @@ A current version of testlink is hosted at http://tl.moquality.com (username: ar
 
 ![Testlink Build/Release Page](testlink.png)
 
-- Create a Build using Build/Releases tab on the right. The build name has to be mentioned in the config file as well. 
-- After creating a Build, an administrator must assign the test cases to a user. Assigning test cases is done using Assign Test Case Execution. 
-- Test cases are executed automatically by our program. It checks periodically if there are any new tests assigned. 
+- Create a Build using Build/Releases tab on the right. The build name has to be mentioned in the config file as well.
+- After creating a Build, an administrator must assign the test cases to a user. Assigning test cases is done using Assign Test Case Execution.
+- Test cases are executed automatically by our program. It checks periodically if there are any new tests assigned.
 - In the report, a user can see the details of the substeps for each test case. If all the test cases are executed correctly, the test case is passed.
 
 ## Example Output from a Test Case
