@@ -8,20 +8,23 @@ The configuration file is used to setup internal parameters as needed. config.ym
 - moq: MoQuality related parameters.
 - testlink: Testlink related parameters.
 
-moq Parameters
-
+**moq Parameters
+**
 - api_server: Server to authenticate against
 - api_key: Provided by MoQuality
 - options: use_cv: Set to True if you want to use Computer Vision to test device. If false the test uses internal Android logs.
 
 **testlink Parameters
-- 
-**- Next few fields are “testlink_url”,  “testlink_key”, “testlink_tester” (default is bot 1). These details are filled beforehand and need not to be changed.
-- Next field is “project_name”. Default name is “Video Playback Testing”. It can be changed, but a project with the same name must be created in the Testlink.
-- Next field is “Testplan_name”. Default name is “Videoplan”.
-- Next field is “Build name”. Administrator must create a build on the Testlink (instructions given below) and enter the name of the build here. The test results will be updated for a build.
+**
+- url: Url to testlink server
+- user: Testlink user
+- key: Key of the testlink user
+- project: Project name
+- plan: Plan name
+- build: Build name
+- test: MoQuality Testfile
 
-
+## Standalone Tests
 If you want to run a standalone test, it can be set in config.yml file as:
 ```
 device_1: <device-id>
