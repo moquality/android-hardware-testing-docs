@@ -8,11 +8,6 @@ Android Hardware Documentation
 
 
 
-
-
-
-
-
 # Working with Testlink
 
 A current version of testlink is hosted at http://tl.moquality.com (username: archertest, password: testlink). Test cases are pre-loaded and can be viewed in Test Specification tab. 
