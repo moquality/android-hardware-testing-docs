@@ -31,13 +31,7 @@ python /app/run.py
 
 ### Configuration
 
-All tests can be configured through the [config.yml file](/configuration-setup.md)
-
-
-
-
-
-. An example config file is:
+All tests can be configured through the [config.yml file](/configuration-setup.md). An example config file is:
 ```
 device_1: <device-id>
 
