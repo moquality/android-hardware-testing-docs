@@ -50,11 +50,6 @@ testlink:
   build: "<build-name>"
   test: "<test.file.yml>"
 
-testcases:
-  <test.file.yml>:
-    option_1: arg_1
-    option_2: arg_2
-
 ```
 It should be saved in the /app folder.
 
