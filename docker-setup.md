@@ -10,8 +10,12 @@ Ensure that the following settings are set on the phone:
 
 ## Downloading the Docker
  
-Pull the image from dockerhub
-sudo docker pull moquality/atest:0.33
+Pull the image from dockerhub. To do so you will need a Dockerhub ID. Find documentation [here](https://docs.docker.com/docker-hub/accounts/). Then pull the docker image using:
+
+```
+sudo docker pull moquality/atest:0.331
+```
+The latest pre-release version of the software is v0.331.
 
 ## Running the Docker
 
@@ -19,7 +23,7 @@ Ensure that the host machine is authorized to use adb. If ```adb devices``` retu
 
 Run the run.sh bash script inside the docker with:
 ```
-docker run -i -t --privileged -v /dev/bus/usb:/dev/bus/usb -v /home/archermind/.android:/root/.android moquality/atest:0.33
+docker run -i -t --privileged -v /dev/bus/usb:/dev/bus/usb -v /home/archermind/.android:/root/.android moquality/atest:0.331
 ```
 
 Inside the docker,
