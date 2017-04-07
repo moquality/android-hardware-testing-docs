@@ -1,14 +1,23 @@
 # Working with Testlink
 
-A current version of testlink is hosted at http://139.196.121.67/testlink/login.php (username: admin, password: archertest). Test cases are pre-loaded and can be viewed in Test Specification tab. 
+A current version of testlink is hosted at http://139.196.121.67/testlink/login.php 
+```
+username: admin
+password: archertest
+```
+## Viewing current execution of test cases
+You can see a matrix of current status of all test cases at:
+* Test Report > Test Reports and Metrics > Test Result Matrix
+
+## Assigning test cases to the bot
+- Go to Test Plan Contents > Assign Test Case Execution
+- Set the correct parameters for Test Plan and Build to assign.
+- Select the test cases that should be automated and assign them using Bulk user assignment to ``bot1``. Click on Do, then Save.
 
 ![Testlink Build/Release Page](testlink.png)
 
-- Create a Build using Build/Releases tab on the right. The build name has to be mentioned in the config file as well.
-- After creating a Build, an administrator must assign the test cases to a user. Assigning test cases is done using Assign Test Case Execution.
-- Test cases are executed automatically by our program. It checks periodically if there are any new tests assigned.
-- In the report, a user can see the details of the substeps for each test case. If all the test cases are executed correctly, the test case is passed.
 
 ## Example Output from a Test Case
+An example output of a successful test case execution shows the following report. It details all the steps the bot took to test the particular test plan.
 
 ![Testlink Output](output.png)
