@@ -8,14 +8,14 @@ The configuration file is used to setup internal parameters as needed. config.ym
 - moq: MoQuality related parameters.
 - testlink: Testlink related parameters.
 
-**moq Parameters
-**
+**moq Parameters**
+
 - api_server: Server to authenticate against
 - api_key: Provided by MoQuality
 - options: use_cv: Set to True if you want to use Computer Vision to test device. If false the test uses internal Android logs.
 
-**testlink Parameters
-**
+**testlink Parameters**
+
 - url: Url to testlink server
 - user: Testlink user
 - key: Key of the testlink user
