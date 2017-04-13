@@ -54,7 +54,7 @@ python run.py
 
 **Viewing results on Testlink**
 
-All the results are uploaded to Testlink hosted at[http://139.196.121.67/testlink/login.php](http://139.196.121.67/testlink/login.php).
+All the results are uploaded to Testlink hosted at [http://139.196.121.67/testlink/login.php](http://139.196.121.67/testlink/login.php).
 
 ```
 username: admin
