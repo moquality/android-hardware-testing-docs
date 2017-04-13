@@ -19,6 +19,14 @@ Docker is a container that automates the deployment of mobile testing applicatio
 
 ```
 sudo docker pull moquality/atest:0.331
+
+```
+
+You will need to have a docker account to be able to pull this image. Use the following username/password:
+
+```
+username: archermind
+password: archertest
 ```
 
 The latest pre-release version of the software is v0.331.
