@@ -32,8 +32,6 @@
   docker run -i -t --privileged -v /dev/bus/usb:/dev/bus/usb -v /home/archermind/.android:/root/.android moquality/atest:0.331
   ```
 
-
-
 * Run the following command to obtain docker container id
 * ```
   docker ps
@@ -53,7 +51,21 @@ cd /app
 python run.py
 ```
 
-## More Information
+**Viewing results on Testlink**
+
+A current version of testlink is hosted at[http://139.196.121.67/testlink/login.php](http://139.196.121.67/testlink/login.php)
+
+```
+username: admin
+password: archertest
+
+```
+
+You can see a matrix of current status of all test cases at:
+
+* Test Report &gt; Test Reports and Metrics  &gt;Test Result Matrix 
+
+More Information
 
 1. [Docker Setup](/docker-setup.md)
 2. [Configuration Setup](/config-setup.md)
