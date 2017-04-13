@@ -5,9 +5,11 @@
 * Ensure that the following settings are set on the phone:
 
 * Settings &gt; Display &gt; Sleep after 30 minutes
+
 * Settings &gt; Security &gt; Screenlock &gt; None
 
-* Note down the "Device ID" after executing the following command 
+* Note down the "Device ID" after executing the following command
+
 * ```
   adb devices
   ```
@@ -17,8 +19,6 @@
   adb kill-server
   ```
 * Download config.yml sent in the email.  Copy the "Device ID" in config.yml and save it.
-
-
 
 **Docker setup**
 
@@ -40,7 +40,7 @@ docker run -i -t --privileged -v /dev/bus/usb:/dev/bus/usb -v /home/archermind/.
 * Copy the first four digits of container id and execute the following command where XXXX is the four digit container id
 
 * ```
-  docker cp config.yml xxxx:config.yml
+  docker cp config.yml xxxx:app/config.yml
   ```
 
 Running the program
@@ -49,7 +49,7 @@ Running the program
 
 ```
 cd /app
-python /app/run.py
+python run.py
 ```
 
 ## More Information
