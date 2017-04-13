@@ -78,5 +78,13 @@ You can see a matrix of current status of all test cases at:
 
 ## Possible Errors
 
-1. Testsuite doesn't start
+** Testsuite fails to run or doesn't show status messages. **
+
+The configuration file might be incorrectly specified. Follow [Configuration Setup](/config-setup.md).
+
+ ** Testsuite fails because it cannot connect to an API server.**
+
+Testsuite needs to be authenticated with the correct API key to run. Before running each test, the test suite authenticates with our server. Check ```ping 139.196.121.67```. 
+
+If you can ping our server and the test suite fails, contact MoQuality.
 
