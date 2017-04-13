@@ -1,24 +1,25 @@
-## Quick Setup
+## Quickstart
 
 **Mobile phone setup**
 
 * Ensure that the following settings are set on the phone:
 
-* Settings &gt; Display &gt; Sleep after 30 minutes
-
-* Settings &gt; Security &gt; Screenlock &gt; None
+  * Settings &gt; Display &gt; Sleep after 30 minutes
+  
+  * Settings &gt; Security &gt; Screenlock &gt; None
 
 * Note down the "Device ID" after executing the following command. If authorization is necessary on the phone, do authorize the computer to access the phone.
 
 * ```
   adb devices
   ```
-* Execute the following command in the shell
+* You have to kill the ADB server on the host machine. Execute the following command in the shell.
 
 * ```
   adb kill-server
   ```
-* Download config.yml sent in the email.  Copy the "Device ID" in config.yml and save it.
+    
+* Download config.yml sent in the email sent to you.  Copy the "Device ID" in config.yml and save it.
 
 **Docker setup**
 
@@ -44,7 +45,7 @@
 
 **Running the program**
 
-* execute the run.py
+Run the automated test suite.
 
 ```
 cd /app
@@ -53,7 +54,7 @@ python run.py
 
 **Viewing results on Testlink**
 
-A current version of Testlink is hosted at [http://139.196.121.67/testlink/login.php](http://139.196.121.67/testlink/login.php)
+All the results are uploaded to Testlink hosted at[http://139.196.121.67/testlink/login.php](http://139.196.121.67/testlink/login.php).
 
 ```
 username: admin
@@ -64,7 +65,7 @@ You can see a matrix of current status of all test cases at:
 
 * Test Report &gt; Test Reports and Metrics  &gt;Test Result Matrix 
 
-More Information
+## More Information
 
 1. [Docker Setup](/docker-setup.md)
 2. [Configuration Setup](/config-setup.md)
