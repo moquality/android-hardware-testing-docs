@@ -8,7 +8,7 @@
 
 * Settings &gt; Security &gt; Screenlock &gt; None
 
-* Note down the "Device ID" after executing the following command
+* Note down the "Device ID" after executing the following command. If authorization is necessary on the phone, do authorize the computer to access the phone.
 
 * ```
   adb devices
@@ -22,16 +22,17 @@
 
 **Docker setup**
 
-* Install docker with the following command.
+* Pull docker with the following command.
 
 * ```
   sudo docker pull moquality/atest:0.331
   ```
 * Run the following command to take you inside docker
+* ```
+  docker run -i -t --privileged -v /dev/bus/usb:/dev/bus/usb -v /home/archermind/.android:/root/.android moquality/atest:0.331
+  ```
 
-```
-docker run -i -t --privileged -v /dev/bus/usb:/dev/bus/usb -v /home/archermind/.android:/root/.android moquality/atest:0.331
-```
+
 
 * Run the following command to obtain docker container id
 * ```
@@ -43,7 +44,7 @@ docker run -i -t --privileged -v /dev/bus/usb:/dev/bus/usb -v /home/archermind/.
   docker cp config.yml xxxx:app/config.yml
   ```
 
-Running the program
+**Running the program**
 
 * execute the run.py
 
