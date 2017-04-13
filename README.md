@@ -8,7 +8,7 @@
 
   * Settings &gt; Security &gt; Screenlock &gt; None
 
-* Note down the "Device ID" after executing the following command. If authorization is necessary on the phone, do authorize the computer to access the phone.
+* Connect phone to the computer. Note down the "Device ID" after executing the following command. If authorization is necessary on the phone, do authorize the computer to access the phone.
 
 * ```
   adb devices
@@ -18,16 +18,15 @@
 * ```
   adb kill-server
   ```
-* Download config.yml sent in the email sent to you.  Copy the "Device ID" in config.yml and save it.
+* Download _**config.yml**_ sent in the email sent to you.  Copy the "Device ID" into _**config.yml**_ and save it.
 
 **Docker setup**
 
-* Start the docker server with the following command
+* Start the docker daemon with the following command
 * ```
   sudo dockerd
   ```
-
-* Pull docker with the following command.
+* Pull docker with the following command. \(Optional, if machine already has docker image\)
 
 * ```
   sudo docker pull moquality/atest:0.331
@@ -36,15 +35,17 @@
   You will need to have a docker account to be able to pull this image. You can use username: `archermind` with password: `archertest`.
 
 * Run the following command to start the docker image:
+
 * ```
   sudo docker run -i -t --privileged -v /dev/bus/usb:/dev/bus/usb -v /home/archermind/.android:/root/.android moquality/atest:0.331
   ```
-* Run the following command in host terminal to obtain docker container id
+* Run the following command in _**host computer's terminal**_ to obtain docker container id \(alphanumeric\)
 
 * ```
   sudo docker ps
   ```
-* In the host terminal, copy the first four digits of container id and execute the following command where XXXX is the four digit container id
+
+* In the _**host computer's terminal**_, copy the container id and execute the following command by replacing XXXX with the container id
 
 * ```
   sudo docker cp config.yml xxxx:app/config.yml
@@ -52,7 +53,7 @@
 
 **Running the program**
 
-Inside the docker terminal execute the following command to run the automated test suite.
+Inside the _**docker terminal**_ execute the following command to run the automated test suite.
 
 ```
 cd /app
