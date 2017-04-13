@@ -44,7 +44,6 @@
 * ```
   sudo docker ps
   ```
-
 * In the _**host computer's terminal**_, copy the container id and execute the following command by replacing XXXX with the container id
 
 * ```
@@ -74,6 +73,12 @@ password: archertest
 You can see a matrix of current status of all test cases at:
 
 * Test Report &gt; Test Reports and Metrics  &gt;Test Result Matrix 
+
+### Creating a new Build
+
+To create new build, open testlink and navigate to _**"Test Plan &gt; Builds / Releases".**_
+
+Put this build name in the _**config.yml**_ file under field _**"build"**_ and run the previous steps again.
 
 ## More Information
 
