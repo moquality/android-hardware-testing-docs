@@ -31,7 +31,7 @@
   You will need to have a docker account to be able to pull this image. You can use username: ```archermind``` with password: ```archertest```.
 
 
-* Run the following command to take you inside docker
+* Run the following command to start the docker image:
 * ```
   docker run -i -t --privileged -v /dev/bus/usb:/dev/bus/usb -v /home/archermind/.android:/root/.android moquality/atest:0.331
   ```
