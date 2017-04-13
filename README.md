@@ -76,7 +76,7 @@ You can see a matrix of current status of all test cases at:
 3. [Working with Testlink](/testlink.md)
 4. [Writing your own test cases](/additional.md)
 
-## Possible Errors
+## FAQ
 
 ** Testsuite fails to run or doesn't show status messages. **
 
@@ -88,7 +88,7 @@ Testsuite needs to be authenticated with the correct API key to run. Before runn
 
 If you can ping our server and the test suite fails, contact MoQuality.
 
-** Cannot find the test results on Testlink **
+** Cannot find the test results on Testlink. **
 
 You are possibly seeing the results under the incorrect project name or build. Check to see if the project name and build are same as config.yml.
 
