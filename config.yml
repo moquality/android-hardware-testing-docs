@@ -1,0 +1,22 @@
+device_1: 063ebefaf0ddfb78
+
+moq:
+  api_server: "http://127.0.0.1:5000"
+  api_key: "k347582vdg0rt7alo1586r2acak7kewu"
+  options:
+    use_cv: true
+
+
+testlink:
+  url: "http://tl.moquality.com"
+  key: "6d698f088a786126016440887694ef8e"
+  user: "bot1"
+  project: "Video Playback Testing"
+  plan: "Videoplan"
+  build: "NexusM"
+  test: "archermind.video.yml"
+
+
+testcases:
+  archermind.test.yml:
+    filename: "patterns_base.mp4"

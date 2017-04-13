@@ -1,10 +1,28 @@
 ## Quick Setup
 
+**Mobile phone setup**
+
 * Ensure that the phone sleep mode is on.
-* adb is enabled on the machine. If typing "adb devices" on the shell returns a device, it is authorized.
+* adb is enabled on the machine. If typing "adb devices" on the shell returns a device, it is authorized. 
+* Note down the "Device ID" after executing the following command 
+* ```
+  adb devices
+  ```
+
+* Execute the following command in the shell
+* ```
+  adb kill-server
+  ```
+
+* Download [config.yml](/config.yml).  Copy the "Device ID" in config.yml and save it.
+
+**Docker setup**
+
 * Install docker with the following command.
 
-  `sudo docker pull moquality/atest:0.331`
+* ```
+  sudo docker pull moquality/atest:0.331
+  ```
 
 * Run the following command to take you inside docker
 
@@ -12,7 +30,19 @@
 docker run -i -t --privileged -v /dev/bus/usb:/dev/bus/usb -v /home/archermind/.android:/root/.android moquality/atest:0.331
 ```
 
-* Once inside the docker, execute the run.py
+*  Run the following command to obtain docker container id
+* ```
+  docker ps
+  ```
+
+* Copy the first four digits of container id and execute the following command where XXXX is the four digit container id
+* ```
+  docker cp config.yml xxxx:config.yml
+  ```
+
+Running the program
+
+* execute the run.py
 
 ```
 cd /app
