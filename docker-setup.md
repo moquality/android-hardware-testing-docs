@@ -9,6 +9,10 @@ Ensure that the following settings are set on the phone:
 
 Ensure that adb \(Android API\) is enabled on the machine. If typing "adb devices" on the shell returns a device, it is authorized.
 
+## Installing Docker
+
+Installed Docker CE. Find instructions for installing Docker CE on Ubuntu [here](https://www.docker.com/docker-ubuntu).
+
 ## Downloading the Docker
 
 Docker is a container that automates the deployment of mobile testing application. The first step is to install the docker image, which is done with the following command:
@@ -18,6 +22,8 @@ sudo docker pull moquality/atest:0.331
 ```
 
 The latest pre-release version of the software is v0.331.
+
+If the docker download is slow, use the [mirror offered by daocloud.io](http://stackoverflow.com/questions/28957330/acclerate-docker-pull-in-china-asia) to configure your docker.
 
 ## Running the Docker
 
@@ -31,7 +37,7 @@ With that you get inside the docker. Now to run the app testing framework, go to
 
 ```
 cd /app
-python /app/run.py
+python run.py
 ```
 
 ### 

@@ -42,10 +42,6 @@ testlink:
   build: "NexusM"
   test: "archermind.video.yml"
 
-
-testcases:
-  archermind.test.yml:
-    filename: "patterns_base.mp4"
 ```
 
 config.yml file is present in the /app folder. You can find the current docker’s container-id with "docker ps".  Config.yml can be edited with the following command
@@ -56,7 +52,7 @@ docker cp config.yml <container-id> /app/config.yml
 
 ### Parameters:
 
-* Obtain the api\_server and api\_key from MoQuality.
+* Obtain the api\_server and api\_key from MoQuality (see our email).
 * device\_1: The device id of the device to be tested.
 * moq: MoQuality related parameters.
 * testlink: Testlink related parameters.
