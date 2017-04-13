@@ -48,7 +48,7 @@
 
 **Running the program**
 
-Run the automated test suite.
+Start the docker and then run the automated test suite.
 
 ```
 cd /app
