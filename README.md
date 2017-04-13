@@ -88,3 +88,7 @@ Testsuite needs to be authenticated with the correct API key to run. Before runn
 
 If you can ping our server and the test suite fails, contact MoQuality.
 
+** Cannot find the test results on Testlink **
+
+You are possibly seeing the results under the incorrect project name or build. Check to see if the project name and build are same as config.yml.
+
