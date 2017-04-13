@@ -84,7 +84,7 @@ The configuration file might be incorrectly specified. Follow [Configuration Set
 
  ** Testsuite fails because it cannot connect to an API server.**
 
-Testsuite needs to be authenticated with the correct API key to run. Before running each test, the test suite authenticates with our server. Check ```ping 139.196.121.67```. 
+Testsuite needs to be authenticated with the correct API key to run. Before running each test, the test suite authenticates with our server. Ping our API server to see if it is online with ```ping 139.196.121.67```
 
 If you can ping our server and the test suite fails, contact MoQuality.
 
