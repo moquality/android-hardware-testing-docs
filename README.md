@@ -54,6 +54,7 @@ Start the docker and then run the automated test suite.
 cd /app
 python run.py
 ```
+The test suite should show you status messages for each test as they run.
 
 **Viewing results on Testlink**
 
@@ -75,5 +76,7 @@ You can see a matrix of current status of all test cases at:
 3. [Working with Testlink](/testlink.md)
 4. [Writing your own test cases](/additional.md)
 
+## Possible Errors
 
+1. Testsuite doesn't start
 
