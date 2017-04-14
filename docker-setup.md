@@ -31,6 +31,7 @@ password: archertest
 
 The latest pre-release version of the software is v0.331.
 
+** Mirroring ** (if the downloads are slow)
 If the docker download is slow, use the [mirror offered by daocloud.io](http://stackoverflow.com/questions/28957330/acclerate-docker-pull-in-china-asia) to configure your docker. Depending on the version of your docker, you can start docker with a mirror using the following:
 
 ```
