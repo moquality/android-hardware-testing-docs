@@ -31,7 +31,12 @@ password: archertest
 
 The latest pre-release version of the software is v0.331.
 
-If the docker download is slow, use the [mirror offered by daocloud.io](http://stackoverflow.com/questions/28957330/acclerate-docker-pull-in-china-asia) to configure your docker.
+If the docker download is slow, use the [mirror offered by daocloud.io](http://stackoverflow.com/questions/28957330/acclerate-docker-pull-in-china-asia) to configure your docker. Depending on the version of your docker, you can start docker with a mirror using the following:
+
+```
+docker --registry-mirror=http://c13176d8.m.daocloud.io daemon
+```
+Here ```c13176d8``` is the id of the account MoQuality made.
 
 ## Running the Docker
 
